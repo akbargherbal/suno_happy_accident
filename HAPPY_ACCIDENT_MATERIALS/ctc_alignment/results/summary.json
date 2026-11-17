@@ -1,0 +1,71 @@
+{
+  "run": "hac_align",
+  "generated_at": "2026-11-17T05:39:49Z",
+  "model": "akbargherbal/wav2vec2-large-xlsr-53-arabic",
+  "revision": "4ca1c9c6ac85d839eebc530ec85b6a89f697e4e8",
+  "device": "cuda",
+  "songs": [
+    {
+      "song": "hac_01",
+      "ok": true,
+      "n_words_in": 139,
+      "n_words_aligned": 139,
+      "duration_s": 334.94,
+      "align_s": 14.4,
+      "lead_silence_s": 2.0,
+      "intro_violation": false,
+      "line_mapping": "line",
+      "warnings": [
+        "13 gaps > 2.0s (max 13.421s) -- skipped stretches",
+        "longest single word spans 13.441s (melisma, or a collapsed phrase)"
+      ],
+      "dropped_leading": null,
+      "coverage": 1.0,
+      "monotone": true,
+      "on_off_ratio": 2.02,
+      "files": {
+        "words_json": "/content/yue2-karaoke-align/results/a1/hac_align/hac_01.words.json",
+        "vtt": "/content/yue2-karaoke-align/results/a1/hac_align/hac_01.vtt",
+        "srt": "/content/yue2-karaoke-align/results/a1/hac_align/hac_01.srt",
+        "player": "/content/yue2-karaoke-align/results/a1/hac_align/hac_01.player.html",
+        "subtitle_granularity": "line",
+        "cues": 23
+      }
+    },
+    {
+      "song": "hac_02",
+      "ok": true,
+      "n_words_in": 139,
+      "n_words_aligned": 139,
+      "duration_s": 349.87,
+      "align_s": 15.2,
+      "lead_silence_s": 4.5,
+      "intro_violation": false,
+      "line_mapping": "line",
+      "warnings": [
+        "11 gaps > 2.0s (max 16.461s) -- skipped stretches",
+        "longest single word spans 15.921s (melisma, or a collapsed phrase)"
+      ],
+      "dropped_leading": null,
+      "coverage": 0.97,
+      "monotone": true,
+      "on_off_ratio": 2.01,
+      "files": {
+        "words_json": "/content/yue2-karaoke-align/results/a1/hac_align/hac_02.words.json",
+        "vtt": "/content/yue2-karaoke-align/results/a1/hac_align/hac_02.vtt",
+        "srt": "/content/yue2-karaoke-align/results/a1/hac_align/hac_02.srt",
+        "player": "/content/yue2-karaoke-align/results/a1/hac_align/hac_02.player.html",
+        "subtitle_granularity": "line",
+        "cues": 23
+      }
+    }
+  ],
+  "totals": {
+    "songs": 2,
+    "ok": 2,
+    "failed": 0,
+    "words": 278,
+    "intro_violations": 0,
+    "warned_songs": 2
+  }
+}

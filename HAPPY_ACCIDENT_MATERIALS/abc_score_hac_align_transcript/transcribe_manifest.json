@@ -1,0 +1,46 @@
+{
+  "tool": "arabmaqamrock-transcribe/1",
+  "created_utc": "2026-11-17T05:57:56Z",
+  "source_run": "/content/hac_align",
+  "batch_manifest": null,
+  "batch_manifest_sha256": null,
+  "out_dir": "/content/hac_align_tran",
+  "model": "m-a-p/SheetSage2",
+  "model_revision": "b83c3d79a6d98bcffaf8f9ed112c90aa887887bc",
+  "melody_only": false,
+  "python": "3.11.18",
+  "torch": "2.8.0+cu126",
+  "transformers": "4.45.2",
+  "device": "cuda",
+  "dtype": "fp32",
+  "threads": 2,
+  "elapsed_s": 114.4,
+  "stopped_early": false,
+  "n": 2,
+  "n_ok": 2,
+  "n_failed": 0,
+  "tracks": [
+    {
+      "stem": "hac_01",
+      "source": "/content/hac_align/hac_01.mp3",
+      "source_wav_sha256": "1eb2ba8d9c3e787f22cb36adf4525e4b5ac647aee1bacc36f52c837d9aae961e",
+      "status": "ok",
+      "seconds": 56.8,
+      "abc": "/content/hac_align_tran/hac_01/score.abc",
+      "abc_sha256": "a38da08524e5c25cbfc81da8e4ec8bcc1c2df72135ae5d732dac452460b107b9",
+      "abc_bytes": 4672,
+      "error": null
+    },
+    {
+      "stem": "hac_02",
+      "source": "/content/hac_align/hac_02.mp3",
+      "source_wav_sha256": "cd8791827af00f5562db6607de6eb4d2a9c4c8a9798910e11cb8b306696dd1ae",
+      "status": "ok",
+      "seconds": 56.3,
+      "abc": "/content/hac_align_tran/hac_02/score.abc",
+      "abc_sha256": "e0cbeb178ef555bd98738deb850c76463b3e7e25aa248efe11e5325f11c7671a",
+      "abc_bytes": 3645,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+== arabmaqamrock-transcribe/1 ==
+start 2026-11-17T05:55:08Z  n=2  out=/content/hac_align_tran
+model m-a-p/SheetSage2  revision=b83c3d79a6d98bcffaf8f9ed112c90aa887887bc  device=cuda  threads=2
+model loaded in 48.8s  torch=2.8.0+cu126  transformers=4.45.2  device=cuda  dtype=fp32  gpu=Tesla T4
+[1/2] hac_01  transcribing…
+[1/2] hac_01  56.8s  ok  abc=4672B
+[2/2] hac_02  transcribing…
+[2/2] hac_02  56.3s  ok  abc=3645B
+done 2026-11-17T05:57:56Z  ok=2/2  failed=0  elapsed=114.4s

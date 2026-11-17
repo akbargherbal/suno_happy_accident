@@ -1,0 +1,84 @@
+My Prompt
+male baritone vocals, powerful melismatic delivery, clear vocal articulation, large hall reverb, smooth vocal delay, pristine vocal production, vocal-forward mix
+---
++ Sample Instrumental Track (around 1 minute) as a seed,  with the following original prompt:
+instrumental, modern neo-western, mid-tempo driving rhythm 110 bpm, gritty and tense, deep electric baritone guitar with tremolo, heavy kick drum, cinematic bass, dusty desert atmosphere, defiant
+---
+
+My Original Lyrics:
+Notice it contains some spelling mistakes intentionally to force certain way of pronunciatino; like
+عمياؤُ  instead of عمياءُ 
+لأنه يسكن الهمزة في نهاية البيت وهذا ما لا أريده
+---
+[Instrumental Intro - 15 seconds]
+
+[Verse]
+آذَنَتْنَا بِبَيْنِهَا أَسمَاءُ
+رُبَّ ثَاوٍ يُمَلُّ مِنْهُ الثَّواءُو
+
+[Verse]
+آذَنَتْنَا بِبَيْنِهَا أَسمَاءُ رُبَّ <-- NOTICE THIS WAS A MISTAKE
+ثَاوٍ يُمَلُّ مِنْهُ الثَّواءُو
+
+[Verse]
+آذَنَتْنَا بِبَيْنِهَا ثُمَّ وَلَّتْ
+لَيْتَ شِعْرِي مَتَى يَكُونُ ٱلِّقَاءُو
+ 
+[Verse]
+بَعْدَ عَهْدٍ لَنَا بِبُرْقَةِ شَمَّاءَ
+فَأَدْنَى دِيَارِهَا الْخَلْصَاءُو
+
+[Verse]
+فَالْمُحَيَّاةُ فَالصِّفَاحُ فَأَعْنَاقُ فِتَاقٍ فَعَاذِبٌ فَالْوَفاءُو
+
+[Verse]
+فَرِيَاضُ الْقَطَا فَأَوْدِيَةُ الشُّرْبَبِ فَالشُّعْبَتَانِ فَالْأَبْلَاءُو
+
+[Instrumental Bridge - 15 seconds]
+
+[Verse]
+لَا أَرَى مَنْ عَهِدْتُ فِيهَا
+فَأَبْكِي الْيَومَ دَلْهًا وَمَا يَرُدُّ الْبُكَاءُو
+
+[Verse]
+وَبِعَيْنَيْكَ أَوْقَدَتْ هِنْدٌ النَّارَ أَخِيراً تُلْوِي بِهَا الْعَلْيَاءُو
+
+[Verse]
+أَوْقَدَتْهَا بَيْنَ الْعَقِيقِ فَشَخْصَيْنِ بِعُودٍ كَمَا يَلُوحُ الضِّيَاءُو
+
+[Verse]
+فَتَنَوَّرْتُ نَارَهَا مِنْ بَعِيدٍ بِخَزَازٍ هَيْهَاتَ مِنْكَ الصِّلَاءُو
+
+[Instrumental Bridge - 15 seconds]
+
+[Verse]
+غَيْرَ أَنِّي قَدْ أَسْتَعِينُ عَلَى الْهَمِّ 
+إِذَا خَفَّ بِالثَّوِيِّ النَجَاءُو
+
+[Verse]
+بِزَفُوفٍ كَأَنَّهَا هِقْلَةٌ أُمُّ رِئَالٍ دَوِيَّةٌ سَقْفَاءُو
+
+[Verse]
+آنَسَتْ نَبأَةً وَأَفْزَعَهَا الْقَنَّاصُ عَصْرًا وَقَدْ دَنَا الْإِمْسَاءُو
+
+[Verse]
+فَتَرَى خَلْفَها مِنَ الرَّجْعِ وَالْوَقْعِ مَنِينًا كَأَنَّهُ إِهْبَاءُو
+
+[Verse]
+وَطِرَاقًا مِنْ خَلْفِهِنَّ طِرَاقٌ سَاقِطَاتٌ أَلْوَتْ بِهَا الصَّحْرَاءُو
+
+[Verse]
+أَتَلَهَّى بِهَا الْهَوَاجِرَ إِذْ كُلُّ ابْنُ هَمٍّ بَلِيَّةٌ عَمْيَاءُو
+
+[Verse]
+أَتَلَهَّى بِهَا الْهَوَاجِرَ إِذْ كُلُّ ابْنُ هَمٍّ بَلِيَّةٌ عَمْيَاءُو
+
+[Instrumental Outro - 15 seconds]
+
+
+---
+I put the same description as the theme/images comma separated that I generated using an LLM:
+
+---
+desert camps, distant firelight, abandoned dwellings, winding valleys, grazing lands, dusk on the horizon, echoing hoofbeats, hunting scenes, dust-filled plains,  ancient alliances, caravan journeys, harsh wilderness, storm-dark skies, longing, nostalgia, sorrow, loneliness, yearning, awe, restlessness, pride, defiance, tension, grief, courage, honor, loyalty, anger, resilience, triumph, solemnity, remembrance, fatalism, dignity 
+---

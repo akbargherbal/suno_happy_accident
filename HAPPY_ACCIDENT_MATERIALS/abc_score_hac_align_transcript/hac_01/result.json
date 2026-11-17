@@ -1,0 +1,63 @@
+{
+  "audio": "hac_01.mp3",
+  "duration_seconds": 334.92,
+  "prompts": [
+    "timestamp",
+    "downbeat_meter",
+    "structure",
+    "key",
+    "chord_full",
+    "melody_full"
+  ],
+  "preset": "default",
+  "melody_only": false,
+  "dtype": "fp32",
+  "window_seconds": 300.0,
+  "overlap_seconds": 200.0,
+  "lookahead_seconds": 100.0,
+  "windows": [
+    {
+      "start": 0.0,
+      "end": 300.0,
+      "accept_start": 0.0,
+      "accept_end": 200.0,
+      "prefix_end": 0.0,
+      "generation_stop": 200.0,
+      "window_index": 0,
+      "prefix_tokens": 0,
+      "tokens": 2222,
+      "events": 669,
+      "accepted_events": 668,
+      "elapsed_seconds": 31.265990535000128
+    },
+    {
+      "start": 34.920000000000016,
+      "end": 334.92,
+      "accept_start": 200.0,
+      "accept_end": 334.92,
+      "prefix_end": 200.0,
+      "generation_stop": null,
+      "window_index": 1,
+      "prefix_tokens": 1836,
+      "tokens": 3146,
+      "events": 901,
+      "accepted_events": 347,
+      "elapsed_seconds": 21.877685204000045
+    }
+  ],
+  "elapsed_seconds": 56.72700430700024,
+  "warnings": [],
+  "peak_gpu_mib": 3382.501953125,
+  "melody_notes": 853,
+  "vocal_notes": 676,
+  "instrumental_notes": 177,
+  "events": 1015,
+  "abc_measures": 246,
+  "abc_error": null,
+  "diagnostics": [
+    "measure 50: inferred 1/4 from downbeat span; declared numerators were [2]",
+    "measure 81: inferred 1/4 from downbeat span; declared numerators were [2]",
+    "measure 92: inferred 1/4 from downbeat span; declared numerators were [2]",
+    "measure 245: padded final 1/4 span to declared 2/4 with trailing rest"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tool": "arabmaqamrock-transcribe/1",
+  "created_utc": "2026-11-17T05:57:56Z",
+  "status": "ok",
+  "source_wav": "/content/hac_align/hac_02.mp3",
+  "source_wav_sha256": "cd8791827af00f5562db6607de6eb4d2a9c4c8a9798910e11cb8b306696dd1ae",
+  "source_wav_bytes": 7879367,
+  "duration_s": 349.872,
+  "model": "m-a-p/SheetSage2",
+  "model_revision": "b83c3d79a6d98bcffaf8f9ed112c90aa887887bc",
+  "melody_only": false,
+  "device": "cuda",
+  "dtype": "fp32",
+  "threads": 2,
+  "python": "3.11.18",
+  "torch": "2.8.0+cu126",
+  "transformers": "4.45.2",
+  "seconds": 56.3,
+  "abc": "score.abc",
+  "abc_sha256": "e0cbeb178ef555bd98738deb850c76463b3e7e25aa248efe11e5325f11c7671a",
+  "abc_bytes": 3645
+}
