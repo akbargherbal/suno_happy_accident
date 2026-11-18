@@ -1,0 +1,24 @@
+{
+  "round": "03_anast (prepared, not sent)",
+  "purpose": "sample for the owner's ear: does A 'give the verse its due' while B rushes the body and stretches only the rhyme",
+  "passage": "anna sat nab'atan wa-afza'aha al-qannasu 'asran wa-qad dana al-imsa'",
+  "windows": {"A": [232.98, 253.98], "B": [235.89, 256.89]},
+  "alignment": "1.0 s before the first word in both (A first word 233.98, B 236.89); 21.000 s each",
+  "measured": {
+    "line_span_A_s": 19.02,
+    "line_span_B_s": 13.20,
+    "first_word_anna_sat_A_s": 5.84,
+    "first_word_anna_sat_B_s": 1.08,
+    "rhyme_al_imsa_A_s": 3.98,
+    "rhyme_al_imsa_B_s": 5.68,
+    "note": "the elongation is distributed differently: A opens with a long madda, B rushes the body and parks its stretch on the rhyme"
+  },
+  "treatment": "two MP3 generations each (LAME q2), then WAV PCM s16le 48 kHz; B attenuated 1.2 dB so both sit at mean_volume -14.0 dB and max -1.7 dB",
+  "files": [
+    {"attached_as": "A_anast.wav", "source": "A = TRACK_01.mp3", "sha256": "29c13c23158e03e7d8b7f9db62c376541196b13ef209a0c8cda6940b32f25df8"},
+    {"attached_as": "B_anast.wav", "source": "B = hat_01_cl_g10_1117111.mp3", "sha256": "460e7be4e09da8d5717a07bacbc698436bbababb56e5f0dfeab4c28f23e46ffe"},
+    {"attached_as": "A_anast_copy.wav", "source": "A again (byte-identical copy)", "sha256": "29c13c23158e03e7d8b7f9db62c376541196b13ef209a0c8cda6940b32f25df8"}
+  ],
+  "control": "A_anast == A_anast_copy byte-for-byte => the duplicate control of round 02 carries over",
+  "assets_untouched": "originals only read; TRACK_01 sha256 unchanged"
+}
