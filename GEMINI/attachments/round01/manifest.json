@@ -1,0 +1,34 @@
+{
+  "round": "01_ab",
+  "purpose": "blind A/B of the same song, two engines; owner rates A=10, B=7.5",
+  "blinding": "metadata stripped (-map_metadata -1, stream copy); decoded PCM verified identical",
+  "files": [
+    {
+      "attached_as": "A.mp3",
+      "duration_s": 334.944,
+      "sha256": "3a62088e93b9dce985e78c3ce837ca6c08176fb5f629b8d0a0d71d17c181cf89",
+      "source": "HAPPY_ACCIDENT_MATERIALS/mp3_HAC_TRACKS/TRACK_01.mp3",
+      "source_sha256": "1eb2ba8d9c3e787f22cb36adf4525e4b5ac647aee1bacc36f52c837d9aae961e",
+      "note": "original (Suno). Owner rating: 10/10",
+      "stripped_tags": [
+        "made with suno; created=2026-05-05T16:52:14.226Z",
+        "title=01.Rouh_drums_05_02",
+        "artist=restrainedindigenous4535",
+        "lyrics-eng=<full lyrics>"
+      ]
+    },
+    {
+      "attached_as": "B.mp3",
+      "duration_s": 327.240,
+      "sha256": "4e983ccfb7ba26334f06f936f0e883733f2e4f165593a354696b609af3d10551",
+      "source": "MY_ATTEMPTS/HAT/hat_01_cl_g10_1117111.mp3",
+      "source_sha256": "44c36c3b428aa7d23bae541fea0067a1bfa88133b0a059f35297cb6e89bdfc2e",
+      "note": "local attempt, seed 1117111, score-conditioned. Owner rating: 7.5/10",
+      "stripped_tags": []
+    }
+  ],
+  "verified": {
+    "decoded_pcm_md5_A": "95258cabb08dfce790069305862a0db6",
+    "decoded_pcm_md5_B": "92b4d83b4a18a5ef11ec0daea3552fda"
+  }
+}

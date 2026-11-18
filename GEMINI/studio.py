@@ -166,18 +166,21 @@ class Studio:
             "Use `prepare` to leave everything ready, then send it yourself.")
 
     def prepare(self, files, system, message):
-        """Fill the system prompt, attach files, write the message — then stop."""
+        """Fill the system prompt and the message; list the files for the owner to attach."""
         self.clean()
         if system:
             self.sys_set(system)
-        for f in (files or []):
-            self.attach(f)
         if message:
             self.draft(message)
         print("\n--- ready state ---")
         self.state()
+        if files:
+            print("\nارفعها بنفسك (زر الإرفاق ← Upload files، أو اسحبها):")
+            for f in files:
+                p = Path(f).resolve()
+                print(f"    {p}   ({p.stat().st_size/1e6:.1f} MB)" if p.exists() else f"    MISSING: {f}")
         self.attachments()
-        print("\nREADY. Nothing has been sent. Press Run yourself.")
+        print("\nREADY. Nothing has been attached or sent by the agent. Attach, then press Run yourself.")
 
     def last(self, chars=1200):
         js = r"""(n) => {
