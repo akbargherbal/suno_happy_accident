@@ -1,0 +1,35 @@
+{
+  "round": "02_dup",
+  "purpose": "does the descriptor HEAR the performance difference when it is not told which is which",
+  "design": "three 21 s clips, one file duplicated byte-for-byte as the negative control",
+  "cut_authority": "B's cut is the owner's, made by ear in Audacity (B_MY_CUT_AUDACITY.mp3)",
+  "windows": {
+    "A": [127.0, 148.0],
+    "B": [126.244, 147.244],
+    "note": "both clips open ~2 s before the line 'la ara man ahidtu fiha' (A 2.27 s, B 1.91 s) and close just before the next line starts (A 0.79 s before, B 0.05 s before)"
+  },
+  "asymmetry_declared": {
+    "band_only_tail_after_al_buka_A_s": 1.77,
+    "band_only_tail_after_al_buka_B_s": 4.25,
+    "consequence": "any claim about the closing seconds is structural, not performance; the comparison target is the sung part"
+  },
+  "measured_anchor": {
+    "al_buka_A_s": 4.02,
+    "al_buka_B_s": 2.46,
+    "source": "CTC word timings, word #56 in hac_01.words.json and hat_01_cl_g10.words.json",
+    "caveat": "forced alignment may absorb part of the release/breath; value confirmed, meaning open"
+  },
+  "treatment": {
+    "A": "original MP3 -> WAV -> MP3 (LAME q2, 171.9 kbps) -> WAV; verified still lands at 127.000 s of the source, corr 0.999",
+    "B": "original MP3 -> owner's Audacity MP3 export (173.5 kbps) -> WAV",
+    "why": "equal number of MP3 generations on both sides (two), then uniform WAV output: no bitrate or format tell, no unequal coding history",
+    "delivered": "WAV PCM s16le 48 kHz stereo, 21.000 s each; mean_volume -14.6 / -14.5 / -14.6 dB"
+  },
+  "files": [
+    {"attached_as": "take_1.wav", "source": "A = TRACK_01.mp3", "sha256": "ac348a2ccfd3d20f82f9fe85f47976e2c48af6bfb4a419d799229cf7c76f6608"},
+    {"attached_as": "take_2.wav", "source": "B = owner's Audacity cut of hat_01_cl_g10_1117111.mp3", "sha256": "9deed058f5a8db6bf9a6f9f7af9b9e132c62b6fab073bd43485200192be7b6a5"},
+    {"attached_as": "take_3.wav", "source": "A again (byte-identical copy of take_1)", "sha256": "ac348a2ccfd3d20f82f9fe85f47976e2c48af6bfb4a419d799229cf7c76f6608"}
+  ],
+  "control": "take_1 == take_3 byte-for-byte => any claimed difference between them is pure fabrication",
+  "assets_untouched": "originals only read; TRACK_01 sha256 still 1eb2ba8d9c3e...9aae961e"
+}

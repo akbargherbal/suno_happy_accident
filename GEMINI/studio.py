@@ -13,6 +13,7 @@ Safety contract
 Usage
 -----
   python3 GEMINI/studio.py state
+  python3 GEMINI/studio.py newchat
   python3 GEMINI/studio.py clean
   python3 GEMINI/studio.py sys-show
   python3 GEMINI/studio.py sys-set GEMINI/system_prompt.txt
@@ -74,6 +75,13 @@ class Studio:
             pass
 
     # ---------- commands ----------
+    def newchat(self):
+        """Navigate the AI Studio tab to a fresh chat (old one stays in History)."""
+        self.pg.goto("https://aistudio.google.com/prompts/new_chat")
+        self.pg.wait_for_load_state("domcontentloaded")
+        time.sleep(2.0)
+        print("navigated:", self.pg.url)
+
     def state(self):
         print("url        :", self.pg.url)
         print("overlays   :", self.overlays(), "(0 = nothing open)")
@@ -196,7 +204,7 @@ class Studio:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["state", "clean", "sys-show", "sys-set", "sys-clear",
+    ap.add_argument("cmd", choices=["state", "newchat", "clean", "sys-show", "sys-set", "sys-clear",
                                     "attach", "attachments", "detach", "draft", "prepare",
                                     "send", "last", "dump"])
     ap.add_argument("arg", nargs="?")
@@ -210,6 +218,7 @@ def main():
         s = Studio(p)
         try:
             if a.cmd == "state":       s.state()
+            elif a.cmd == "newchat":   s.newchat()
             elif a.cmd == "clean":     print("clean:", s.clean())
             elif a.cmd == "sys-show":  s.sys_show()
             elif a.cmd == "sys-set":   s.sys_set(a.arg)
