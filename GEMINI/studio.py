@@ -6,8 +6,9 @@ Safety contract
 ---------------
 * Only elements inside the chat area and the right-hand run-settings panel are used.
 * Nothing is ever clicked in: API key, billing, upgrade/unlock, reset-settings.
-* `send` refuses to run without --yes.
-* Every command prints what it did, so the person watching can follow.
+* STAGE-1 RULE (AGENTS §6): the agent never presses Run. `send` is disabled and
+  explains why. Use `prepare`: it fills the system prompt, attaches the files and
+  writes the message, then stops.
 
 Usage
 -----
@@ -20,7 +21,7 @@ Usage
   python3 GEMINI/studio.py attachments
   python3 GEMINI/studio.py detach
   python3 GEMINI/studio.py draft FILE
-  python3 GEMINI/studio.py send --yes
+  python3 GEMINI/studio.py prepare --files A.mp3[,B.mp3] --system F --message F
   python3 GEMINI/studio.py last [CHARS]
   python3 GEMINI/studio.py dump [CHARS]
 """
@@ -160,23 +161,23 @@ class Studio:
         print(f"draft written: {len(got)} chars (NOT sent)")
 
     def send(self, yes):
-        if not yes:
-            raise SystemExit("refusing to send without --yes")
-        body = self.pg.locator(SEL_PROMPT).first.input_value().strip()
-        if not body:
-            raise SystemExit("prompt box is empty")
-        print("sending:", body.replace("\n", " | ")[:120], "...")
-        self.pg.locator(SEL_RUN).first.click()
-        t0 = time.time()
-        while time.time() - t0 < 600:
-            time.sleep(1.5)
-            gen = self.pg.locator('[aria-label*="Stop"], button:has-text("Stop")').count()
-            if gen == 0 and time.time() - t0 > 4:
-                print(f"finished in {time.time()-t0:.0f}s (stop button gone)")
-                break
-        else:
-            print("still running after 600s — check manually")
-        print(self.last(1500))
+        raise SystemExit(
+            "disabled by the stage-1 rule (AGENTS §6): the owner presses Run.\n"
+            "Use `prepare` to leave everything ready, then send it yourself.")
+
+    def prepare(self, files, system, message):
+        """Fill the system prompt, attach files, write the message — then stop."""
+        self.clean()
+        if system:
+            self.sys_set(system)
+        for f in (files or []):
+            self.attach(f)
+        if message:
+            self.draft(message)
+        print("\n--- ready state ---")
+        self.state()
+        self.attachments()
+        print("\nREADY. Nothing has been sent. Press Run yourself.")
 
     def last(self, chars=1200):
         js = r"""(n) => {
@@ -193,10 +194,13 @@ class Studio:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["state", "clean", "sys-show", "sys-set", "sys-clear",
-                                    "attach", "attachments", "detach", "draft", "send",
-                                    "last", "dump"])
+                                    "attach", "attachments", "detach", "draft", "prepare",
+                                    "send", "last", "dump"])
     ap.add_argument("arg", nargs="?")
     ap.add_argument("--yes", action="store_true")
+    ap.add_argument("--files", help="comma-separated file paths to attach")
+    ap.add_argument("--system", help="path to the system instructions text")
+    ap.add_argument("--message", help="path to the message text")
     a = ap.parse_args()
 
     with sync_playwright() as p:
@@ -211,6 +215,8 @@ def main():
             elif a.cmd == "attachments": s.attachments()
             elif a.cmd == "detach":    s.detach()
             elif a.cmd == "draft":     s.draft(a.arg)
+            elif a.cmd == "prepare":   s.prepare((a.files or "").split(",") if a.files else [],
+                                                 a.system, a.message)
             elif a.cmd == "send":      s.send(a.yes)
             elif a.cmd == "last":      print(s.last(a.arg or 1200))
             elif a.cmd == "dump":      s.dump(a.arg or 3000)
