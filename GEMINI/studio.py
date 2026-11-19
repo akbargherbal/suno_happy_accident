@@ -45,7 +45,15 @@ class Studio:
     def __init__(self, p):
         self.b = p.chromium.connect_over_cdp(CDP)
         pages = [pg for c in self.b.contexts for pg in c.pages]
-        self.pg = next(x for x in pages if URL_KEY in x.url)
+        target = next((x for x in pages if URL_KEY in x.url), None)
+        if target is None:
+            # no AI Studio tab: open one in the existing window (owner asked)
+            ctx = self.b.contexts[0]
+            target = ctx.new_page()
+            target.goto("https://aistudio.google.com/prompts/new_chat")
+            target.wait_for_load_state("domcontentloaded")
+            time.sleep(2.5)
+        self.pg = target
         self.pg.bring_to_front()
         time.sleep(0.2)
 
