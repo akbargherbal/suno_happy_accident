@@ -1,0 +1,34 @@
+{
+  "round": "09_ab_02",
+  "purpose": "same verdict probe as round 07, applied to the TRACK_02 pair; stage 2 (tag) follows if the real 10/10 is picked",
+  "blinding": "metadata stripped (-map_metadata -1, stream copy); decoded PCM verified identical to source; source sha256 unchanged",
+  "files": [
+    {
+      "attached_as": "A.mp3",
+      "duration_s": 349.872,
+      "sha256": "f76e4745c7c960806a0af2fe0e6774ef9496adbf5b627e155200b46bc3b5c96b",
+      "source": "HAPPY_ACCIDENT_MATERIALS/mp3_HAC_TRACKS/TRACK_02.mp3",
+      "source_sha256": "cd8791827af00f5562db6607de6eb4d2a9c4c8a9798910e11cb8b306696dd1ae",
+      "note": "original (Suno). Owner rating: 10/10. Given to the model as 9.5",
+      "stripped_tags": [
+        "comment=made with suno; created=2026-05-05T16:52:14.226Z; id=fdf3f423-...",
+        "title=01.Rouh_drums_05_01"
+      ]
+    },
+    {
+      "attached_as": "B.mp3",
+      "duration_s": 337.632,
+      "sha256": "335e1bc41a309190e65ce74d0ebf8a0f02837a2921059f874a9eeb091bd68296",
+      "source": "MY_ATTEMPTS/HAT/hat_02_ar75_3337333.mp3",
+      "source_sha256": "522f80bb25c72d33c72b6c4d7b360d4e282b28f19b5bfe8339193199c95d56d4",
+      "note": "local attempt, score-conditioned. Owner rating: 8/10. Given to the model as 7.5",
+      "stripped_tags": []
+    }
+  ],
+  "verified": {
+    "decoded_pcm_md5_A": "9e8eeef5118514ae8d5072b6c40ba02f",
+    "decoded_pcm_md5_B": "e5b454ad3c7213b647f74382c8095f2d",
+    "pcm_match_source_A": true,
+    "pcm_match_source_B": true
+  }
+}
