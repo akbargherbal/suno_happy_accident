@@ -1,0 +1,146 @@
+Skip to main content
+menu_open
+EXPLORE
+chat_spark
+Playground
+history
+History
+BUILD
+add
+New app
+widgets
+My apps
+gallery_thumbnail
+Gallery
+MANAGE
+speed
+Dashboard
+chevron_right
+developer_guide
+Documentation
+chevron_right
+Unlock Gemini 4 Carbon
+Access to higher quota, frontier models and more.
+notifications
+settings
+search
+key
+ghurbal.may.2024@gmail.com
+Playground
+
+17,305 tokens
+
+design_services
+add
+more_vert
+more_vert
+more_vert
+edit
+more_vert
+more_vert
+Model 9:51 AM
+Thoughts
+
+Expand to view model thoughts
+
+chevron_right
+edit
+more_vert
+
+المقطع الأول:
+
+[سمعت] لا.
+
+[سمعت] نعم، في 00:14، و00:32، و00:48، و01:05، و01:22.
+
+[سمعت] منتظم، يبدأ وينتهي في 00:14–00:17، و00:31–00:35، و00:47–00:51، و01:04–01:08، و01:21–01:25.
+
+[سمعت] تنخفض، في 00:15–00:17، و00:33–00:35، و00:49–00:51، و01:06–01:08، و01:23–01:25.
+
+[سمعت] نعم، في 01:23–01:26.
+
+[سمعت] على الكلمة مباشرة، في 00:04.
+
+[سمعت] نعم، تزداد قليلًا في 01:19–01:22 مقارنةً بـ 00:04–00:10.
+
+[سمعت] نعم، في 01:19–01:20.
+
+[سمعت] يبقى الصوت في طبقة صدرية واحدة، طوال 00:04–01:25.
+
+[سمعت] يعود الصوت هادئًا، في 01:24–01:27.
+
+المقطع الثاني:
+
+[سمعت] لا.
+
+[سمعت] نعم، في 00:12، و00:30، و00:47، و01:03، و01:23.
+
+[سمعت] منتظم، يبدأ وينتهي في 00:11–00:15، و00:28–00:33، و00:46–00:49، و01:01–01:06، و01:21–01:25.
+
+[سمعت] تنخفض، في 00:13–00:15، و00:31–00:33، و00:47–00:49، و01:04–01:06، و01:23–01:25.
+
+[سمعت] نعم، في 00:34–00:42، و01:20–01:25.
+
+[سمعت] على الكلمة مباشرة، في 00:00.
+
+[سمعت] نعم، تزداد الخشونة في 01:18–01:24 مقارنةً بـ 00:00–00:10.
+
+[سمعت] نعم، في 01:18–01:19.
+
+[سمعت] يبقى الصوت في طبقة صدرية واحدة، طوال 00:00–01:25.
+
+[سمعت] ينخفض الصوت في 01:24–01:25 ثم يبقى/يعود مرتفعًا في 01:26–01:27.
+
+thumb_up
+thumb_down
+info
+Google AI models may make mistakes, so double-check outputs.
+Use Arrow Up and Arrow Down to select a turn, Enter to jump to it, and Escape to return to the chat.
+add_circle
+key_off
+widgets
+Tools
+google
+Grounding with Google Search
+close
+chevron_right
+mic
+Run
+Ctrl
+keyboard_return
+Run settings
+code
+Get code
+reset_settings
+close
+Gemini 4 Hydrogen
+gemini-4-hydrogen
+An efficient model with cutting-edge intelligence for fast, dependable execution across coding, agentic workflows, and multimodal knowledge work.
+System instructions
+أنت مستمع موسيقي دقيق. صف ما تسمعه في الملفات المرفقة فقط. 1. كل وصف مرتبط بزمن (mm:ss) أو بمقطع مسمّى. 2. ميّز الصريح: اكتب [سمعت] لما تسمعه، و[استنتجت] لما تستنتجه. 3. إن لم تستطع الحكم فقل «لا أعرف» — لا تخمّن. 4. لا تفترض مقامًا أو سرعة أو بنية من اسم الملف أو من أي نص؛ اعتمد على الصوت وحده. 5. لا أحكام جودة، ولا أرقام غير مقيسة.
+Thinking level
+High
+expand_more
+
+Tools
+
+Structured outputs
+
+Edit
+
+Code execution
+
+Function calling
+
+Edit
+
+Grounding with Google Search
+
+Source:
+Google Search
+URL context
+expand_more
+
+Advanced settings
+
+Response ready.
