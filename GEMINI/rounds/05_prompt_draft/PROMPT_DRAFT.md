@@ -2,6 +2,8 @@
 
 > **ليست وصفة.** كل سطر موسوم بمصدره. الوسم يعني: من أين جاء، لا كم هو جميل.
 > **[مقيس]** رقم من ملفاتنا · **[مسموع]** أذن صاحب المشروع · **[واصف]** قاله جيمناي (وحده لا يكفي) · **[تخمين]** لا دليل، ويُحذف أولًا عند الاختبار.
+>
+> **وقاعدة ضد الـoverfitting:** كل بند إما **قاعدة** تُكتب على **الموضع** (تنطبق على أي نص)، أو **معامل** يحمل **قيمة هذه القطعة** ويُمرَّر متغيرًا. لا يُكتب مثال لغوي داخل قاعدة: «البكاء→البكاءُو» مثال، لا قاعدة.
 
 ---
 
@@ -13,7 +15,8 @@
 | `no shouting, no rock grit, no rasp` | [مسموع]: «ليس صراخ الروك» |
 | `clear consonant articulation, syllables separated, no slurring` | [مسموع]: «تاء ساكنة ثم نون مفتوحة، القطع سهل» |
 | `melismatic delivery; long madda on the rhyme` | [مقيس] + [مسموع] |
-| `final vowel extends into waw (ishba'): al-buka' → al-buka'-u-w` | [مسموع] + [واصف] مستقلًّا |
+| **قاعدة:** `on every line ending, sustain the final syllable and resolve its short vowel into its long counterpart (dammeh→waw, fatha→alif, kasra→ya) — ishba'/wasl` | [مقيس] + [مسموع] + `CHECKPOINT §5.1` |
+| **معامل هذه القصيدة فقط:** `rowi = hamza with damma → waw` | [مسموع] — يُمرَّر كقيمة، لا يُكتب داخل القاعدة |
 | `solo voice, no harmonies, no doubling` | [مسموع]: مغنٍّ واحد؛ والجولة 04 ادّعت صوتًا ثانيًا فسقط |
 | `no audible inhalation` | [مسموع] |
 | `vocal-forward mix; voice above the band, not inside it` | [مسموع] + [مقيس]: الجهارة متساوية (‑11.5) ومع ذلك يُسمع الأخفّ صوتًا |
@@ -22,7 +25,7 @@
 
 | Tag | المصدر |
 |---|---|
-| `slow declamation: about 2 seconds per word in slow lines` | [مقيس]: 2.05 و2.11 ثانية/كلمة |
+| `slow declamation: about 2 seconds per word in slow lines` | [مقيس] — **معامل**: يتبع وزن النص؛ القاعدة أن يكون أبطأ من نبض الفرقة |
 | `do not rush the verse body and compensate on the rhyme` | [مقيس] + [مسموع]: B يمرّ ثم يمدّ القافية |
 | `rising arc: quiet entry → building intensity → peak on the final couplet` | [واصف] + [مقيس]: منحنى الطاقة |
 | `recited, tartil-like gravity` | [مسموع] — تشبيه المالك. [تخمين] كـtag |
@@ -35,13 +38,13 @@
 | `smooth vocal delay` | [تخمين] |
 | `sparse, guitar-led intro; band fills in later` | [مقيس]: تسطّح طيفي منخفض في أول 22 ثانية |
 
-## د) الأسلوب والإيقاع
+## د) الأسلوب والإيقاع — **كلها معاملات هذه القطعة، لا قواعد**
 
 | Tag | المصدر |
 |---|---|
-| `87 bpm` | [مقيس] — **لا 110** |
-| `C minor (Nahawand on C)` | [مقيس] كمفتاح غربي؛ المقام نفسه [مفتوح] |
-| `distorted electric guitar enters after the intro, not at bar one` | [مقيس] + [مسموع] |
+| `87 bpm` | [مقيس] — **لا 110**. معامل: سرعة هذه القطعة |
+| `C minor (Nahawand on C)` | [مقيس] كمفتاح غربي؛ المقام نفسه [مفتوح]. معامل |
+| `distorted electric guitar enters after the intro, not at bar one` | [مقيس] + [مسموع]. **قاعدة**: لا تبدأ بالفرقة كاملة |
 
 ## هـ) ما يُحذف من البرومبتات السابقة (له دليل)
 
