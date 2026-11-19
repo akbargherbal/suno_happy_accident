@@ -67,3 +67,28 @@
 ⇒ هذه المسودة تصف **ما يجب أن يُسمع**، ولا تضمن أن يُنفَّذ. والطبقة الحاكمة عندنا اليوم: **السكور** (§16).
 
 **الترتيب المقترح عند الاختبار:** ابدأ بالصوت والأداء (أ، ب) لأن كل بنده مسموع أو مقيس؛ ثم احذف (ج) كاملًا لتعرف أثره؛ ولا تُعد إلى (د) قبل حسم السكور.
+
+---
+
+## و) السطر الجاهز (نسخة واحدة)
+
+**النواة — كل بند فيها مقيس أو مسموع:**
+
+```
+male high tenor, deep chest resonance, wide breath support, clear consonant
+articulation, syllables separated, no slurring, no shouting, no rock grit,
+melismatic, long madda on every line ending, rhyme's final vowel resolved into
+its long counterpart (damma to waw, fatha to alif, kasra to ya), solo voice,
+no harmonies, no audible inhalation, vocal-forward mix, voice above the band,
+slow declamation, no rushing the verse then compensating on the rhyme,
+rising arc from quiet entry to peak on the final couplet, sparse guitar-led
+intro, band enters after the intro, 87 bpm, C minor
+```
+
+**الملحق — [تخمين] يُضاف أو يُحذف كاملًا:**
+
+```
+large hall reverb, smooth vocal delay, recited gravity
+```
+
+**ترتيب الأولوية إن قُصر السطر:** [قواعد الأداء] ← [الصوت] ← [المزيج] ← [المعاملات] ← [الإنتاج].
